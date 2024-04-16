@@ -1,3 +1,9 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿
+DoOp(10,5,add);
+cacl mk = add;
+Console.WriteLine(mk(5, 8));
 
-Console.WriteLine("Hello, World!");
+ void DoOp(int x, int y, cacl op) => Console.WriteLine(op(x, y));
+int substract(int x, int y) => x * y;
+int add(int x, int y) => x + y;
+delegate int cacl(int x,int y);
